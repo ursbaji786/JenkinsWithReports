@@ -48,7 +48,8 @@ public class TestNgHooks extends WebDriverServiceImpl{
 
 		startTestcase(nodes);		
 
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 		System.setProperty("webdriver.chrome.silentOutput", "true");
 		ChromeOptions options = new ChromeOptions();
 		
